@@ -38,10 +38,6 @@ function getCharacters() {
     
 }
 
-
-   
-    
-
 function generateTwopasswords() {
     passwordOne = ""
     passwordTwo = ""
@@ -50,6 +46,6 @@ function generateTwopasswords() {
 }
 
 
-// console.log(getCharacters())
+
 
 
