@@ -1,20 +1,31 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Karla'>
-         <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Inter'>
-    </head>
-    <body>
-        <h1>Generate a <br/><span>random password</span></h1>
-        <p>Never use an insecure password again.</p>
-       
-        
-        <button onclick="generateTwopasswords()">Generate passwords</button>
-        <div id="line"></div>
-         <div class="passwords">
-            <p class="password-field" id="password-1"></p>
-            <p class="password-field" id="password-2"> </p>
-            </div>
-        <script src="index.js"></script>
-    </body>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Karla"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter"
+    />
+  </head>
+  <body>
+    <h1>Generate a <br /><span>random password</span></h1>
+    <p>Never use an insecure password again.</p>
+    <div class="buttons">
+      <button onclick="generateTwopasswords()">Generate passwords</button>
+      <button onclick="clearFields()">Clear fields</button>
+    </div>
+    <div id="line"></div>
+    <div class="passwords">
+      <input class="password-field" id="password-1" />
+      <input class="password-field" id="password-2" />
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
