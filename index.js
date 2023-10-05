@@ -30,7 +30,7 @@ function getCharacters() {
         charactersSetTwo.push(getRandomSymbol())
     }
     for (let i=0; i<=15; i++) {
-        passwordTwo  += charactersSetOne[i]
+        passwordTwo  += charactersSetTwo[i]
     }
     
     passwordField1.textContent = passwordOne
