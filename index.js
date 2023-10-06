@@ -4,8 +4,8 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let passwordOne = ""
 let passwordTwo = ""
-let passwordField1 = document.getElementById("password-1")
-let passwordField2 = document.getElementById("password-2")
+const passwordField1 = document.getElementById("password-1")
+const passwordField2 = document.getElementById("password-2")
 
 
 
@@ -16,21 +16,14 @@ function getRandomSymbol() {
 
 
 function getCharacters() {
-    let charactersSetOne = []
-    let charactersSetTwo = []
+ 
     
-    for (let i = 0; i <= 15; i++){
-        charactersSetOne.push(getRandomSymbol())
-    }
     for (let i=0; i<=15; i++) {
-        passwordOne += charactersSetOne[i]
+        passwordOne += getRandomSymbol()
     }
-    
-     for (let i = 0; i <= 15; i++){
-        charactersSetTwo.push(getRandomSymbol())
-    }
+
     for (let i=0; i<=15; i++) {
-        passwordTwo  += charactersSetTwo[i]
+        passwordTwo  += getRandomSymbol()
     }
     
     passwordField1.textContent = passwordOne
@@ -42,7 +35,6 @@ function generateTwopasswords() {
     passwordOne = ""
     passwordTwo = ""
     getCharacters()
-
 }
 
 
